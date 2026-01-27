@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} /* * é usado para remover o padrão do HTML */
+
+:root {
+    --primary-color:#4f46e5;
+    --primary-hover:#4338ca;
+    --bg-color:#f3f4f6;
+    --bg-dark: #171718;
+    --text-color:#1f2937;
+    --white:#fff;
+    --error:#ef4444;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2{
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+p{
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+label{
+    padding: 0.75rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+input{
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 1s;
+}
+
+input:hover{
+    border: 1px solid var(--bg-dark);
+}
+
+input.focus{
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgb(79, 70, 229, 0.1);
+}
+
+button{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+button:hover{
+    background-color: var(--primary-hover);
+}
+
+.mensagem{
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+    min-height: 1.2rem;
+}
