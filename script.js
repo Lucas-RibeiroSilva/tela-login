@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if(email && senha.length >= 6){
             mostrarMensagem("Login realizado com sucesso!", "green");
             console.log("Dados enviados:", {email,senha});
+
+            document.getElementById('email').value = '';
+            document.getElementById('senha').value = '';
+            
         }else{
             mostrarMensagem("A senha precisa ter mais de 6 digitos!","red");   
         }
@@ -19,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
         mensagem.textContent = text;
         mensagem.style.color =  color === "red" ? "var(--error)" : "#10b981";
     }
+
 })

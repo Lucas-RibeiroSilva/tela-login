@@ -22,7 +22,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .login-card{
     background-color: var(--white);
     padding: 2.5rem;
